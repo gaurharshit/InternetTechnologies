@@ -1,0 +1,28 @@
+<HTML>
+<BODY>
+<SCRIPT type= "text/javascript"> 
+var array=[];
+var limit;
+limit=window.prompt("Enter the limit");
+array[0]=window.prompt("Enter the first number");
+array[1]=window.prompt("Enter the second number");
+array[2]=window.prompt("Enter the third number");
+array[3]=window.prompt("Enter the fourth number");
+for (var i=0;i<limit;i++)
+{
+ for (var k=0;k<(limit-i-1);k++)
+ {
+  if(array[k]>array[k+1])
+   {
+    var temp=array[k];
+    array[k]=array[k+1];
+    array[k+1]=temp;
+   }
+ }
+}
+document.write(array[0]);
+document.write(array[1]);
+document.write(array[2]);
+document.write(array[3]);
+ </SCRIPT>
+</BODY>
