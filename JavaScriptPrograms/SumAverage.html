@@ -1,0 +1,24 @@
+<HTML>
+<BODY>
+<SCRIPT type= "text/javascript"> 
+var x;
+var totalNumbers;
+totalNumbers=window.prompt("Total Numbers")
+totalNumbers=parseInt(totalNumbers)
+var numbers=new Array(totalNumbers)
+for(var i=0;i<totalNumbers;i++)
+{
+ x=window.prompt("Enter the numbers")
+ x=parseInt(x)
+ numbers[i]=x;
+}
+var sum=0
+for(var i=0;i<totalNumbers;i++)
+{
+ sum=sum+numbers[i]
+}
+var average=sum/totalNumbers
+document.write("Sum"+sum+" "+"average="+average)
+ </SCRIPT>
+</BODY>
+</HTML>

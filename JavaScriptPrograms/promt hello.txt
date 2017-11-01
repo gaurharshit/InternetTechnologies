@@ -1,0 +1,5 @@
+<HTML>
+<BODY>
+<SCRIPT type= "text/javascript"> window.promt("HELlo WORLD") </SCRIPT>
+</BODY>
+</HTML>

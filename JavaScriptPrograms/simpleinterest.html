@@ -1,0 +1,20 @@
+<HTML>
+<BODY>
+<SCRIPT type= "text/javascript"> 
+var principle
+var amount;
+var interest=5;
+var time=0;
+principle=window.prompt("Enter the principle")
+principle=parseInt(principle)
+time=window.prompt("Enter the time")
+time=parseInt(time)
+for (var i=1;i<=time;i++)
+{
+ amount=(principle*interest)/100
+ principle=principle+amount
+ document.write("After"+ time +"Amount=" + principle)
+}
+ </SCRIPT>
+</BODY>
+</HTML>//24 26 6
