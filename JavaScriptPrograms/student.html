@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" >
+        function validate_form()
+    { var1=document["StudentRegistration"]["textnames"].value;
+	var regex=/^[a-zA-Z]+$/;
+	var regex2=/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+
+    if (!var1.match(regex))
+    {
+    alert( "Please provide your Name in characters!" );
+    document.StudentRegistration.textnames.focus() ;
+    return false;
+    }
+	if(!document.StudentRegistration.roll.value.lenth!=7)
+	{
+	 alert( "Please provide your roll in 7 characters!" );
+	}
+    if( !document.StudentRegistration.dob.value.match(regex2) )
+    {
+    alert( "Please provide your DOB!" );
+    document.StudentRegistration.dob.focus() ;
+    return false;
+    }
+	return true;
+    }
+
+
+    </script>
+</head>
+<body>
+    <form name="StudentRegistration" action="" onsubmit="return validate_form();" method="post">
+
+    <table>
+
+        <tr>
+            <td colspan=2>
+                <center><font size=4><b>Student Registration Form</b></font></center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><input type=text name=textnames id="textname" size="30"></td>
+        </tr>
+
+
+        <tr>
+            <td>Roll Number</td>
+            <td><input type="text" name="roll"></td>
+        </tr>
+
+
+
+
+        <tr>
+            <td>DOB</td>
+            <td><input type="text" name="dob" id="dob" size="30"></td>
+        </tr>
+
+<input type="submit" value="Submit" />
+    </table>
+
+</form>
+</body>
+</html>
